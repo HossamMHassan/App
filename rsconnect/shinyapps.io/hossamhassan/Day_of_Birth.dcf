@@ -1,0 +1,12 @@
+name: Day_of_Birth
+title: Day_of_Birth
+username:
+account: hossamhassan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2649763
+bundleId: 3486653
+url: https://hossamhassan.shinyapps.io/Day_of_Birth/
+when: 1596803583.31771
+asMultiple: FALSE
+asStatic: FALSE
