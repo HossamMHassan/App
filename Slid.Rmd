@@ -1,0 +1,39 @@
+---
+title: "Day of Birth App."
+author: "Hossam Hassan"
+date: "8/7/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## The Idea
+
+This app is built on a very simple idea, all that you have to do is to enter a date and the app will tell you in which day was/will it. So finally you can know in which day you born :D 
+
+## Enter the date
+
+- The date takes the format YYYY-mm-dd
+- Yo can select the date from the select menu.
+
+## The programing behind
+weeksday() function in **R** returns the day of any date. So to know in which day we are just run
+```{r, echo = TRUE}
+weekdays(Sys.Date())
+```
+
+## Algrithim to do it manually
+
+```{r, echo = TRUE}
+# Take the date
+a=as.Date("1987/08/10",format="%Y/%m/%d")
+
+# Find the difference between the system date and this date
+d=as.numeric(Sys.Date()-a)
+# Find the reminder with 7
+r=d%%7
+#Find this day in the week :D
+format(Sys.Date()-d, "%a")
+```
